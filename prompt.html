@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            
+            
+        </style>            
+
+        <link rel="stylesheet" href="css/jquery.prompt.css" media="all" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.prompt.js"></script>
+        
+        <script>
+
+            $(function () {
+
+                /*var prompt = $('.prompt');
+
+                prompt.css({
+                'marginLeft': -prompt.width(),
+                'marginTop': -prompt.height()
+                });*/
+
+                $('a').click(function () {
+
+                    var index = $(this).index('a');
+
+                    switch (index) {
+
+                        case 0:
+                            {
+                                $.prompt('设置成功思密达', 'success', 2000, function () {
+
+                                    alert('已完成事件');
+                                });
+                                break;
+                            }
+
+                        case 1:
+                            {
+                                $.prompt('设置失败思密达', 'error', 2000, function () {
+
+                                    alert('已完成事件');
+                                });
+                                break;
+                            }
+                        case 2:
+                            {
+                                $.prompt('更改已完成思密达', 'information', 2000, function () {
+
+                                    alert('已完成事件');
+                                });
+                                break;
+                            }
+                        case 3:
+                            {
+                                $.prompt('由于您的操作太没有节操，设置完全失败思密达', 'warning', 5000, function () {
+
+                                    alert('已完成事件');
+                                });
+                                break;
+                            }
+
+                    }
+
+                    return false;
+
+                });
+
+
+            });
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <a href="">success</a>
+        <a href="">error</a>
+        <a href="">information</a>
+        <a href="">warning</a>
+        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+.prompt{
+    padding: 14px 25px;
+    position: fixed;
+    border: 1px solid #D5D5D5;
+    background-color: #FFF;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+            
+.prompt i{
+                
+    background: url(../images/icenter-delay-wei140122102000.png);                
+    display: block;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    float: left;
+    top: 16px;
+    left: 26px;
+}
+            
+.prompt .success{
+    background-position: -493px -111px;
+}
+            
+.prompt .error{
+    background-position: -516px -88px;
+}
+            
+.prompt .information{
+    background-position: -518px -31px;
+}
+            
+.prompt .warning{
+    background-position: -516px -111px;
+}
+            
+.prompt span{
+    font-style: normal;
+    font-size: 14px;
+    font-family: "Helvetica Neue",\5FAE\8F6F\96C5\9ED1,Tohoma;
+    float: left;
+    padding-left: 30px;
+    line-height: 26px;
+}
